@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Latihan IoT</title>
+    <meta name="author" content="Fani Aghistiya Lestari">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <h1>Message Arrived</h1>
+    <h3>
+        <div id="arrived"> </div>
+    </h3>
+    <hr>
+    <h1>Termostat</h1>
+    <div>
+        <h3>Temperature : <div id="suhu"> </div>
+        </h3>
+        <h3>Humidity : <div id="humi"> </div>
+        </h3>
+    </div>
+
+    <hr>
+    <h1>LED</h1>
+    <button onclick="ledState(1)">ON</button>
+    <button onclick="ledState(0)">OFF</button>
+    <hr>
+
+    <div id="chart_div" style="width: 400px; height: 120px;"></div>
+</body>
+
+</html>
